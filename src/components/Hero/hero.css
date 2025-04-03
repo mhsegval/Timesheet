@@ -1,0 +1,129 @@
+/* Hero Section Styling */
+.hero-section {
+  background-color: white;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent; /* Set transparent border by default */
+}
+
+.btn-login {
+  background: white;
+  background-clip: padding-box; /* Ensures gradient doesn't show behind border */
+  position: relative;
+  z-index: 1;
+  color: #3498db;
+}
+
+.btn-login:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #3498db;
+}
+
+.btn-register {
+  background-color: #3498db;
+  color: white;
+  border: 2px solid #3498db !important; /* Force border color to stay */
+}
+
+.btn-register:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  color: black;
+
+}
+
+.hero-image-container {
+  position: relative;
+  height: 100%;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199.98px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    margin: 0 auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-image {
+    max-width: 80%;
+    margin-top: 3rem;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-image {
+    display: none;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

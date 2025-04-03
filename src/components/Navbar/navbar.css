@@ -1,0 +1,126 @@
+/* Navbar styling */
+.navbar {
+  background-color: white !important;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50 !important;
+}
+
+.brand-highlight {
+  color: #3498db;
+}
+
+.nav-link {
+  color: #2c3e50 !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #3498db !important;
+}
+
+.nav-link.active {
+  color: #3498db !important;
+  font-weight: 500;
+}
+
+/* Icons */
+.bi {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #2c3e50;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #f8f9fa;
+  color: #3498db;
+}
+
+.dropdown-divider {
+  border-color: #e9ecef;
+}
+
+/* Notification badge */
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -25%);
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile menu adjustments */
+.navbar-toggler {
+  border: none;
+  color: #2c3e50;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown-menu {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 2rem);
+    text-align: center;
+  }
+
+  /* Show text next to icons in mobile view */
+  .navbar-nav.ms-auto .nav-link {
+    justify-content: center;
+  }
+}
+
+/* Tooltip styling */
+.tooltip-inner {
+  background-color: #2c3e50;
+  font-size: 0.8rem;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #2c3e50;
+}
